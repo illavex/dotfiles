@@ -1,5 +1,5 @@
 {
-  "layer": "top",
+  "layer": "bottom",
   "position": "top",
   "height": 24,
   "spacing": 5,
@@ -54,13 +54,6 @@
     "scroll-step": 5
   },
 
-  "battery": {
-    "bat": "BAT1",
-    "interval": 60,
-    "format": "{icon}  {capacity}%",
-    "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
-  },
-
   "backlight": {
     "format": "\udb80\udcdf  {percent}%"
   },
@@ -68,10 +61,6 @@
   "memory": {
     "interval": 30,
     "format": "\uf4bc  {used:0.1f}G"
-  },
-
-  "temperature": {
-    "format": " {temperatureC}°C"
   },
 
   "network": {
