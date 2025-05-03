@@ -1,0 +1,35 @@
+@theme "/home/illavex/.dotfiles/rofi/themes/green-theme.rasi"
+
+* {
+    font: "BlockZone  20";
+}
+
+window {
+    transparency: "real";
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px;
+    border-color: #7fff00;
+    border-radius: 0;
+	location:       north;
+    y-offset:       calc(40% - 176px);
+    width:          480;
+
+}
+
+listview {
+    spacing: 5;
+    columns: 1;
+    lines: 20;
+    cycle: false;
+}
+configuration {
+  	show-icons:         true;
+  	icon-theme:         "1em";
+	kb-row-up: "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
+    kb-row-down: "Down,Control+j";
+    kb-accept-entry: "Control+m,Return,KP_Enter";
+    kb-remove-to-eol: "Control+Shift+e";
+    kb-mode-previous: "Shift+Left,Control+Shift+Tab,Control+h";
+    kb-remove-char-back: "BackSpace";
+  
+}

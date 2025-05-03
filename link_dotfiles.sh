@@ -14,4 +14,13 @@ ln -s ~/.dotfiles/neofetch ~/.config/neofetch
 rm -rf ~/.config/waybar 
 ln -s ~/.dotfiles/waybar ~/.config/waybar
 
+rm -rf ~/.config/sway 
+ln -s ~/.dotfiles/sway ~/.config/sway
+
+rm -rf ~/.config/rofi 
+ln -s ~/.dotfiles/rofi ~/.config/
+
+rm -rf ~/.config/wlogout 
+ln -s ~/.dotfiles/wlogout ~/.config/wlogout
+
 echo "Done!"

@@ -1,0 +1,29 @@
+/* Replace the path with your USERNAME */
+
+* {
+    font: 20 "BlockZone";
+}
+
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba( 14, 14, 14, 0.8);
+}
+button {
+    font-size: 32px;
+    background-size: 25%;
+    padding-bottom: 125px;
+    margin: 10px;
+    border-radius: 0;
+    background-color: rgba ( 14, 14, 14, 0.8) ;
+    border: 2px solid rgba ( 127, 255, 0, 1);
+    color: rgba ( 127, 255, 0, 1);
+}
+
+button:focus, button:active, button:hover {
+	background-color: rgba( 14, 14, 14, 0.8);
+	outline-style: none;
+}
