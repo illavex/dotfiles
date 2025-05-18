@@ -23,4 +23,6 @@ ln -s ~/.dotfiles/rofi ~/.config/
 rm -rf ~/.config/wlogout 
 ln -s ~/.dotfiles/wlogout ~/.config/wlogout
 
+rm -rf ~/.config/mako 
+ln -s ~/.dotfiles/mako ~/.config/mako
 echo "Done!"

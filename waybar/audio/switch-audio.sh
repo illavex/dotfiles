@@ -58,7 +58,15 @@ TARGET_SINK="${SINK_ARRAY[$TARGET_INDEX]}"
 pactl set-default-sink "$TARGET_SINK"
 SWITCH_RESULT=$?
 # echo "Switched to sink $TARGET_SINK with result: $SWITCH_RESULT" >> $LOG_FILE
-notify-send "Switched Output" "Now using: $TARGET_SINK"
+if [ "$TARGET_SINK" = "alsa_output.pci-0000_12_00.6.analog-stereo" ]; then
+    notify-send "Switched Audio-Output" "Now using: PC"
+fi
+
+if [ "$TARGET_SINK" = "alsa_output.pci-0000_03_00.1.hdmi-stereo" ]; then
+    notify-send "Switched Audio-Output" "Now using: Monitor"
+fi
+
+
 if [ $SWITCH_RESULT -ne 0 ]; then
     # echo "Failed to switch to sink $TARGET_SINK" >> $LOG_FILE
     # echo '{"text": "🔊 Switch failed"}'
